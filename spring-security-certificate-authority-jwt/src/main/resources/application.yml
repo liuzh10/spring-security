@@ -1,0 +1,25 @@
+# config server post
+server:
+  port: 8088
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.237.128:3306/springboot-security?useUnicode=true&characterEncoding=UTF-8&useSSL=false&rewriteBatchedStatements=true
+    username: root
+    password: 123456
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath*:/mapper/*.xml
+  type-aliases-package: com.liuzh10.domain
+
+# jwt config
+jwt:
+  # secret
+  secret: com.liuzh10
+  # token  expiry time
+  expire: 7 # unit:day
+  # token: the param exit header
+  header: token

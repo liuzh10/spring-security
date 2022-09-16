@@ -1,0 +1,10 @@
+# config server post
+server:
+  port: 8088
+
+## config form spring security login username and password
+#spring:
+#  security:
+#    user:
+#      name: test
+#      password: zhangsan

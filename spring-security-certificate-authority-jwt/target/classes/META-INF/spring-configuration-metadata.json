@@ -1,0 +1,31 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.liuzh10.utli.JwtUtils",
+      "name": "jwt",
+      "type": "com.liuzh10.utli.JwtUtils"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.liuzh10.utli.JwtUtils",
+      "defaultValue": 0,
+      "name": "jwt.expire",
+      "description": "expire time",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.liuzh10.utli.JwtUtils",
+      "name": "jwt.header",
+      "description": "storage in header",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.liuzh10.utli.JwtUtils",
+      "name": "jwt.secret",
+      "description": "secret",
+      "type": "java.lang.String"
+    }
+  ]
+}

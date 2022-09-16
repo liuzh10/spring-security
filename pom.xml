@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.liuzh10</groupId>
+    <artifactId>spring-security</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>spring-security-original</module>
+        <module>spring-security-original-form</module>
+        <module>spring-security-self-form</module>
+        <module>spring-security-certificate-authority-memory-form</module>
+        <module>spring-security-certificate-authority-mysql-form</module>
+        <module>spring-security-certificate-authority-back-front-form</module>
+        <module>spring-security-certificate-authority-jwt</module>
+    </modules>
+    <packaging>pom</packaging>
+    <description>study spring security demo</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <springboot.version>2.0.6.RELEASE</springboot.version>
+    </properties>
+    
+    <dependencyManagement>
+        <dependencies>
+            <!-- Specify  the springboot Version -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${springboot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
